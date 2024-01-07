@@ -3,27 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photo Gallery</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>Photo Gallery</h1>
-    <div class="viewer">
-      <button onclick="picNext(-1)">Prev</button>
-      <img class="frame" src="assets/1.jpg"></img>
-      <button onclick="picNext(1)">Next</button>
+    <div class="frame">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="assets/1.jpg"
+              onclick="currentSlide(1)"
+              alt="Man and Hills"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="assets/2.jpg"
+              onclick="currentSlide(2)"
+              alt="Books on Side Table"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="assets/3.jpg"
+              onclick="currentSlide(3)"
+              alt="Coffee on Table"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="assets/4.png"
+              onclick="currentSlide(4)"
+              alt="Norway? No way!"
+            />
+          </div>
+          <div class="column">
+            <img
+              class="demo cursor"
+              src="assets/5.png"
+              onclick="currentSlide(5)"
+              alt="Man and Snowy Mountain"
+            />
+          </div>
+        </div>
+        <div class="viewer">
+          <div class="buttonContainer" onclick="plusSlides(-1)">
+            <a class="prev">&#10094;</a>
+          </div>
+          <div class="viewerPic">
+            <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+              <img src="assets/1.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+              <img src="assets/2.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+              <img src="assets/3.jpg" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="assets/4.png" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="assets/5.png" />
+            </div>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </div>
+          <!-- Full-width images with number text -->
+          <div class="buttonContainer" onclick="plusSlides(1)">
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <!-- Image text -->
+      <!-- Thumbnail images -->
+
+      <!-- Container for the image gallery -->
     </div>
-    <!-- <div class="thumbnails">
-        <div>
-            <img src="assets/1.jgp">
-        </div>
-        <div>
-            <img src="assets/2.jpg">
-        </div>
-        <div>
-            <img src="assets/3.jpg">
-        </div>
-    </div> -->
   </body>
-  <script src="script.js"></script>
 </html>
