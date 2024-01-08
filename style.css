@@ -15,6 +15,7 @@ body {
   flex-wrap: nowrap;
   flex-shrink: 1;
   min-width: 580px;
+  background-color: black;
 }
 
 .frame {
@@ -22,10 +23,10 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #222222e5;
+  background-color: black;
+  box-shadow: 20px 20px 60px #16161621, -20px -20px 60px #16161621;
   flex-wrap: nowrap;
   filter: blur(75);
-  box-shadow: 20px 20px 60px #16161621, -20px -20px 60px #16161621;
   width: 100%;
   padding: 2pc;
 }
@@ -101,11 +102,6 @@ body {
   font-size: large;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-}
-
 /* On hover, add a black background color with a little bit see-through */
 
 /* Number text (1/3 etc) */
@@ -178,12 +174,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #222222e5;
     flex-wrap: wrap;
-    filter: blur(75);
-    box-shadow: 20px 20px 60px #16161621, -20px -20px 60px #16161621;
     width: 100%;
-    height: 680px;
+    height: 650px;
+    background-color: black;
   }
 
   /* Position the image container (needed to position the left and right arrows) */
@@ -196,17 +190,18 @@ body {
     width: 100%;
     height: 95%;
     gap: 10px;
-    flex-basis: auto;
+    position: fixed;
+    top: 0;
+    margin-top: 20px;
   }
 
   .viewer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: nowrap;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 600px;
     gap: 3px;
   }
 
@@ -216,6 +211,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100px;
   }
 
   .viewerPic > .mySlides > img {
@@ -258,12 +254,6 @@ body {
     font-size: large;
   }
 
-  /* Position the "next button" to the right */
-  .next {
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-
   /* Number text (1/3 etc) */
   .numbertext {
     font-size: 10px;
@@ -288,7 +278,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 90%;
     height: fit-content;
     gap: 10px;
     background-color: #5a5a5a;
